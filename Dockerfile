@@ -20,6 +20,7 @@ RUN \
     requests[security] \
     requests-cache \
     babelfish \
+    tmdbsimple \
     'guessit<2' \
     'subliminal<2' \
     'stevedore==1.19.1' \
@@ -36,7 +37,7 @@ RUN \
   chmod -R g+w /var/log/sickbeard_mp4_automator && \
 
 # ffmpeg
-  wget https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-armhf-static.tar.xz -O /tmp/ffmpeg.tar.xz && \
+  wget https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-armhf-static.tar.xz -O /tmp/ffmpeg.tar.xz && \
   mkdir /usr/local/bin/ffmpeg && \
   tar -xJf /tmp/ffmpeg.tar.xz -C /usr/local/bin/ffmpeg --strip-components 1 && \
   chgrp -R users /usr/local/bin/ffmpeg && \
