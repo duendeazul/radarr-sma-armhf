@@ -1,4 +1,4 @@
-FROM linuxserver/radarr:arm32v7-latest
+FROM linuxserver/radarr:arm32v7-v0.2.0.1450-ls18
 COPY qemu-arm-static /usr/bin
 MAINTAINER mdhiggins <mdhiggins23@gmail.com>
 
